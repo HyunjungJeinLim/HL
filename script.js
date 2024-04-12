@@ -11,7 +11,7 @@ document.getElementById('csHtml').addEventListener('click', function() {
     loadContent('csA.html');
 });
 
-document.getElementById('csHtml').addEventListener('click', function() {
+document.getElementById('csCSS').addEventListener('click', function() {
     loadContent('csB.html');
 });
 
