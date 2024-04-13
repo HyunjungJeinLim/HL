@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="stylesheet" href="style.css">
+        <title>HyunJung Lim Homepage - Main</title>
+    </head>
+    <body>
+        <div id="modal-email">
+            <div class="mEmailBox">
+                <h3>Email to Hyunjung Lim</h3>
+                <span>Subject</span>
+                <input id="emailInput">
+                <span>Content</span>
+                <textarea id="emailText"></textarea>
+                <button onclick="emailSent()">Send</button>
+                <button onclick="closeModal('modal-email')">Close</button>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li id="csMain"><a class="clicked" href="index.html">Home</a></li>
+                <li>|</li>
+                <li id="csHtml"><a href="csHTML.html">HTML Cheat Sheet</a></li>
+                <li>|</li>
+                <li id="csCSS"><a href="csCSS.html">CSS Cheat Sheet</a></li>
+            </ul>
+        </nav>
+        <div class="mainContainer">
+            <aside>
+                <div class="generalInfo"> <!-- general info -->
+                    <span class="myName">Hyunjung Lim</span>
+                    <span>Bow Valley College</span>
+                    <span>Software Development</span>
+                </div>
+                <div class="horizontal-divider"></div>
+                <div class="personalInfo"> <!-- personal info-->
+                    <span>INFO</span>
+                    <div class="personalContainer">
+                        <span class="pIcon material-symbols-outlined">mail</span>
+                        <span>limsam1210@gmail.com</span>
+                    </div>
+                    <div class="personalContainer">
+                        <span class="pIcon material-symbols-outlined">public</span>
+                        <span><a href="https://hyunjungjeinlim.github.io/HL/">https://hyunjungjeinlim.github.io/HL/</a></span>
+                    </div>
+                    <div class="personalContainer">
+                        <span class="pIcon material-symbols-outlined">home</span>
+                        <span>211 14 Ave SE</span>
+                    </div>
+                </div>
+                <div class="horizontal-divider"></div>
+                <div class="langInfo"> <!-- language -->
+                    <span  class="langTitle">LANGUAGE</span>
+                    <div class="langItem">
+                        <img src="https://www.countryflags.com/wp-content/uploads/south-korea-flag-png-large.png">
+                        <span>Korean</span>
+                    </div>
+                    <div class="langItem">
+                        <img src="https://www.countryflags.com/wp-content/uploads/canada-flag-png-large.png">
+                        <span>English</span>
+                    </div>
+
+                    <div class="horizontal-divider"></div>
+
+                    <!-- send email -->
+                    <div class="email">
+                        <button onclick="emailForm()">Email Me</button>
+                    </div>
+
+                    <!-- clock -->
+                    <div class="clock">
+                        <div class="time">
+                            <span id="hours"></span> :
+                            <span id="minutes"></span> :
+                            <span id="seconds"></span>
+                        </div>
+                        <div class="date" id="date"></div>
+                    </div> 
+                </div>
+            </aside>
+            <div id="main" class="mainContent">
+                
+                <div class="outerBox"> <!-- EXPERIENCE-->
+                    <span>Experience</span>
+                
+                    <div class="innerGroup"> <!-- EXP1 -->
+                        <ul class="innerLeft">
+                            <li>Feb 2023 - Present</li>
+                            <li>MobSquad</li>
+                            <li>Front of House Associate barista</li>
+                        </ul>
+                        <div class="innerRight">
+                            <p>Took and filled customer orders</p>
+                            <p>Inventory management and product procurement</p>
+                        </div>
+                    </div>
+
+                    <div class="main-divider"></div>
+
+                    <div class="innerGroup"> <!-- EXP2 -->
+                        <ul class="innerLeft">
+                            <li>July 2016 - June 2017</li>
+                            <li>Ramada Hotel</li>
+                            <li>Reservation Department</li>
+                        </ul>
+                        <div class="innerRight">
+                            <p>Managed customer Reservation</p>
+                            <p>Delegated Front desk duties</p>
+                            <p>Conducted an annual review of hotel expenses and implemented cost adjustments</p>
+                        </div>
+                    </div>
+                    
+                    <div class="main-divider"></div>
+
+                    <div class="innerGroup"> <!-- EXP3 -->
+                        <ul class="innerLeft">
+                            <li>March 2013 - September 2014</li>
+                            <li>Moa Payment </li>
+                            <li>Administrative Department</li>
+                        </ul>
+                        <div class="innerRight">
+                            <p>Managed document and record</p>
+                            <p>Handled budget and expense</p>
+                            <p>Provided general office and administrative support</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="outerBox"> <!-- EDUCATION-->
+                    <span>Education</span>
+                    <div class="innerGroup"> <!-- EDU1-->
+                        <ul class="innerLeft">
+                            <li>January 2024 - Present</li>
+                            <li>Bow Valley College</li>
+                            <li>Software Development</li>
+                        </ul>
+                        <div class="innerRight">
+                            <p>Learning software skills as HTML, CSS,JS, C++</p>
+                            <p>Learn to create innovative software solutions through programming, agile methodologies, and problem-solving skills for success in the tech industry.</p>
+                        </div>
+                    </div>
+
+                    <div class="main-divider"></div>
+                    
+                    <div class="innerGroup"> <!-- EDU2 -->
+                        <ul class="innerLeft">
+                            <li>March 2010 - August 2016</li>
+                            <li>Semyung University</li>
+                            <li>Hotel Management</li>
+                        </ul>
+                        <div class="innerRight">
+                            <p>Bachelor's degree</p>
+                            <p>Equipped with expertise in hospitality operations, guest services, and business management for roles in hotels, resorts, and related industries.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <div class="outerBox"> <!-- skills -->
+                    <span>Skills</span>
+                    <div class="skillsBox">
+                        <div class="skillsInnerBox">
+                            <span>Programming Language</span>
+                            <div>
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>JavaScript</li>
+                                    <li>C++</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="skillsInnerBox">
+                            <span>Certificates</span>
+                            <div>
+                                <ul>
+                                    <li>Microsoft Office Specialist</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+    <footer>
+
+    </footer>
+</html>

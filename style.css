@@ -1,0 +1,369 @@
+
+body {
+    font-family: "Rubik", sans-serif;
+    font-size: 15px;
+    margin: 10px 20px;
+}
+
+/* navigation */
+nav {
+    background-image: url('https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?q=80&w=2426&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    opacity: 0.8;
+    background-color: lightgray;
+    height: 120px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* ul style */
+nav ul {
+    display: flex;
+    list-style-type: none; 
+    padding: 0;
+}
+
+/* li style */
+nav ul li {
+    margin-right: 20px; 
+    color: #fff; 
+}
+
+/* link(a) style */
+nav ul li a {
+    text-decoration: none; 
+    transition: color 0.3s ease; 
+    color: #fff; 
+}
+
+/* hover */
+nav ul li a:hover {
+    color: #ffd700; 
+    cursor: pointer;
+}
+
+.clicked {
+    color: crimson;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+
+.mainContainer {
+    display: flex;
+    margin-top: 20px;
+}
+
+/* divider */
+.horizontal-divider {
+    border-top: 1px solid black;
+    width: 100%;
+    margin-top: 40px;
+}
+
+/* aside profile area */
+aside {
+    min-width: 135px;
+    display: flex;
+    flex-direction: column;
+    background-color: lightgray;
+    width: 15%;
+    padding: 10px;
+    border-radius: 20px;
+    align-items: center;
+}
+
+/* general info */
+.generalInfo {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.myName {
+    font-weight: 500;
+    font-size: 20px;
+    background: var(--gradient-primary, linear-gradient(90deg, #a478e8 0%, #516cf7 100%));
+    -webkit-background-clip: text; 
+    background-clip: text;
+    margin-bottom: 10px;
+}
+
+.generalInfo span:nth-child(2),
+.generalInfo span:nth-child(3) {
+    font-size: 12px;
+}
+
+ /* personal info */
+.personalInfo {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 40px;
+    width: 100%;
+}
+
+
+.personalInfo span:first-child {
+    font-weight: 500;
+}
+
+.pIcon { /* personal info icon size */
+    font-size: 30px;
+    margin-right: 5px;
+    color: #616161;
+}
+
+.personalContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+ /* language */
+.langInfo {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.langTitle {
+    margin: auto;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+ 
+.langItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    margin-top: 10px;
+}
+    
+img {
+    width: 40px;
+    border-radius: 30px;
+}
+
+.langInfo div span {
+    margin-left: 5px;
+ }
+
+.time-container{
+    width: 200px;
+    text-align: center;
+    margin-top: 50px;
+    background-color: burlywood;
+    border-radius: 10px;
+    border: 2px solid salmon;
+}
+
+.clock {
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 150px;
+}
+
+ /* clock */
+
+.time {
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.date {
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.email {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Main Contents */
+.mainContent {
+    background-color: white;
+    width: 80%;
+    margin-left: 20px;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+.outerBox {
+    width: 100%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.outerBox span:first-child {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.innerGroup {
+    display: flex;
+    width: 100%;
+}
+
+.innerGroup:not(:first-child) {
+    margin-top: 10px;
+}
+
+.innerLeft {
+    width:20%;
+    padding-left: 20px;
+}
+
+.innerLeft *:nth-child(2),
+.innerLeft *:nth-child(3) {
+    list-style-type: none;
+    margin-top: 5px;
+}
+
+.innerRight {
+    margin-left: 30px;
+}
+
+.education {
+    margin-top: 20px;
+}
+
+.skillsBox {
+    margin-top: 10px;
+    display: flex;
+}
+
+.skillsBox div {
+    margin-left: 20px;
+}
+
+.skillsInnerBox {
+    border: 1px solid lightgray;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.skillsBox ul {
+    padding: 0;
+}
+
+.main-divider {
+    border-top: 2px dotted gray;
+    opacity: 0.3;
+    width: 100%;
+    margin-top: 10px;
+}
+
+
+/* Cheat Sheet */
+
+.csContainer {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    color: #333;
+}
+
+table {
+    width: 70%;
+    border-collapse: collapse;
+}
+
+table tr th {
+    text-align: center;
+}
+
+table tr td:first-child {
+    text-align: center;
+}
+
+.txtCenter {
+    text-align: center;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+
+/* Modal */
+
+#modal-email {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.mEmailBox {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    width: 500px;
+    padding: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 20px;
+}
+
+.mEmailBox * {
+    margin: 3px;
+}
+
+.mEmailBox *:nth-child(2) {
+    margin-top: 20px;
+}
+
+
+button {
+    padding: 5px;
+    background-color: white;
+    border: 2px solid rgb(115, 115, 115);
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 1500px) {    
+    .personalInfo span:nth-child(2) {
+       font-size: 10px; 
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .personalInfo span:nth-child(2) {
+       font-size: 8px; 
+    }
+}
